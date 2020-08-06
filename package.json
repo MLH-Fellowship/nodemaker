@@ -8,6 +8,7 @@
     "packgen": "tsc && node build/scripts/generatePackageJson.js",
     "icongen": "tsc && node build/scripts/generateIconCandidates.js",
     "docsgen": "tsc && node build/scripts/generateNodeDocs.js",
+    "validate": "tsc && node build/scripts/validateParams.js",
     "place": "tsc && node build/scripts/placeFiles.js",
     "resize": "tsc && node build/scripts/resizeIcon.js",
     "flowgen": "tsc && node build/scripts/createWorkflow.js",
@@ -23,6 +24,8 @@
   "author": "Iván Ovejero",
   "license": "MIT",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@types/hapi__joi": "^17.1.4",
     "@types/sharp": "^0.25.0",
     "concurrently": "^5.2.0",
     "dotenv": "^8.2.0",
@@ -39,7 +42,6 @@
     "@types/node": "^12.12.38",
     "@types/node-fetch": "^2.5.7",
     "@types/puppeteer": "^3.0.1",
-    "tsc-watch": "^4.2.9",
     "typescript": "^3.9.6"
   }
 }
