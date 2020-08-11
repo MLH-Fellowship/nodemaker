@@ -187,8 +187,8 @@ type FieldDefault = SingleValueFieldDefault | ManyValuesFieldDefault;
 
 type SingleValueFieldDefault = string | number | boolean;
 
-type ManyValuesFieldDefault = {}; // for options/multioptions, I believe this should actually be a string containing the default option value
-// for example: https://github.com/MLH-Fellowship/n8n/blob/ebe2775701f9803165e14f28e11ad0610dc155a1/packages/nodes-base/nodes/ActiveCampaign/ConnectionDescription.ts#L42
+// {} is for CollectionType, and string is for OptionsType
+type ManyValuesFieldDefault = {} | string; 
 
 type ManyValuesGroupFieldOption = {
   name: string;
