@@ -47,55 +47,22 @@ Developed as a **desktop app** and **CLI utility**, in MVP stage, as a capstone 
   Built with <b>TypeScript</b>, <b>Node</b>, <b>Electron</b> and <b>Vue</b>
 </p>
 
-## Overview
-
-Nodemaker generates two types of files:
-
-**Node functionality files**
-
-- `*.node.ts` — main logic (regular or trigger node)
-- `GenericFunctions.ts` — node helper functions
-- `*Description.ts` — separate logic per resource (optional)
-- `*.credentials.ts` — node authentication params
-- `package.json` — updated node listing
-- `*.png` — node icon
-
-| ![](docs/images/screencaps/node.png) ![](docs/images/screencaps/credentials.png) |
-| :------------------------------------------------------------------------------: |
-|            Excerpts of `HackerNews.node.ts` and `GenericFunctions.ts`            |
-
-<br />
-
-**Node documentation files**
-
-- `README.md` — main doc file
-- `README.md` — credentials doc file
-- `workflow.png` — in-app screenshot for main doc file
-
-| ![](docs/images/screencaps/node-doc.png) ![](docs/images/screencaps/workflow.png) |
-| :-------------------------------------------------------------------------------: |
-|                  Excerpt of main `README.md` and `workflow.png`                   |
-
-<br />
-
-Once these files are generated, Nodemaker can:
-
-- relocate them in your copies of the [n8n](https://github.com/n8n-io/n8n) and [n8n-docs](https://github.com/n8n-io/n8n-docs) repos, and
-- submit a sample workflow to the [n8n.io](https://n8n.io/workflows) collection.
-
-| ![](docs/images/screencaps/placement.png) <img src="docs/images/screencaps/workflow-submission.png" width="610"/>  |
-| :----------------------------------------------------------------------------------------------------------------: |
-| Node TypeScript files placed in `n8n` repo and automated workflow submission on [n8n.io](https://n8n.io/workflows) |
-
 ## Installation
 
 ### Nodemaker
 
 To set up Nodemaker:
 
-1. Clone this repository: `git clone https://github.com/MLH-Fellowship/nodemaker.git`
-2. Install backend dependencies: `npm i`
-3. Install frontend dependencies: `cd client && npm i`
+```sh
+# Clone this repository: 
+git clone https://github.com/MLH-Fellowship/nodemaker.git
+
+# Install backend dependencies: 
+npm i
+
+# Install frontend dependencies: 
+cd client && npm i
+```
 
 > **Note**: Only the backend dependencies are needed to run the CLI utility.
 
@@ -148,7 +115,9 @@ Nodemaker can be operated as a desktop app or as a CLI utility.
 
 ### Desktop app
 
-> PENDING: Explanation of how to run and operate desktop app.
+```
+npm run desktop
+```
 
 **Note:** At MVP stage, `shotgen`, `flowgen`, `icongen` and `resize` are not available through the desktop app.
 
@@ -171,9 +140,49 @@ Nodemaker can be operated as a desktop app or as a CLI utility.
 | `empty`    | Clear the `/output` directory.                                  | ---                                        |
 | `desktop`  | Run the desktop app.                                            | ---                                        |
 
+## Overview
+
+Nodemaker generates two types of files:
+
+**Node functionality files**
+
+- `*.node.ts` — main logic (regular or trigger node)
+- `GenericFunctions.ts` — node helper functions
+- `*Description.ts` — separate logic per resource (optional)
+- `*.credentials.ts` — node authentication params
+- `package.json` — updated node listing
+- `*.png` — node icon
+
+| ![](docs/images/screencaps/node.png) ![](docs/images/screencaps/credentials.png) |
+| :------------------------------------------------------------------------------: |
+|            Excerpts of `HackerNews.node.ts` and `GenericFunctions.ts`            |
+
+<br />
+
+**Node documentation files**
+
+- `README.md` — main doc file
+- `README.md` — credentials doc file
+- `workflow.png` — in-app screenshot for main doc file
+
+| ![](docs/images/screencaps/node-doc.png) ![](docs/images/screencaps/workflow.png) |
+| :-------------------------------------------------------------------------------: |
+|                  Excerpt of main `README.md` and `workflow.png`                   |
+
+<br />
+
+Once these files are generated, Nodemaker can:
+
+- relocate them in your copies of the [n8n](https://github.com/n8n-io/n8n) and [n8n-docs](https://github.com/n8n-io/n8n-docs) repos, and
+- submit a sample workflow to the [n8n.io](https://n8n.io/workflows) collection.
+
+| ![](docs/images/screencaps/placement.png) <img src="docs/images/screencaps/workflow-submission.png" width="610"/>  |
+| :----------------------------------------------------------------------------------------------------------------: |
+| Node TypeScript files placed in `n8n` repo and automated workflow submission on [n8n.io](https://n8n.io/workflows) |
+
 ## Authors
 
-© 2020 Iván Ovejero and Erin McNulty
+© 2020 [Iván Ovejero](https://github.com/ivov) and [Erin McNulty](https://github.com/erin2722)
 
 ## License
 
