@@ -12,6 +12,7 @@
 		"strictPropertyInitialization": false,
 		"esModuleInterop": true,
 		"forceConsistentCasingInFileNames": true,
+		"experimentalDecorators": true,
 		"plugins": [
 			{ "transform": "typescript-is/lib/transform-inline/transformer" }
 		]
